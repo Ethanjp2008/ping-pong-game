@@ -16,13 +16,21 @@ body
     float: right;
     border: 1px solid white;
 }
-
 .footer{
-    background-color: white;
+    background-color: grey;
+    width: 100%;
+    margin-bottom: 0px;
+    color: white;
     line-height: 2;
-    margin: 0px;
+    bottom: 0px;
+    position: sticky;
+}
+.modal-body{
+    text-align: left;
 }
 
-.modal-dialog{
-    width: 90%;
+canvas{
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px white;
+    border: 2px solid white;
 }

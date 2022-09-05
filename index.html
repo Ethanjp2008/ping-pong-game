@@ -1,5 +1,4 @@
 <!--created by prashant shukla-->
-<!DOCTYPE html>
 <html>
     <head>
     <title>Ping Pong</title>
@@ -18,54 +17,39 @@
     <center>
         <div class="btn btn-warning heading">
             <h3>AI PING PONG GAME</h3>
-            <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#my_modal">Instructions</button>
         </div>
-        <button class="btn btn-success" id="start_button" onclick="start()">Play Game</button>
+        <button class="btn btn-success" id="start_button" onclick="startGame()">Play Game</button>
         <br>
         <h3 id="status" class="btn btn-danger"></h3>
         <br><br>
         <div id="canvas"></div>
         <br><br>
-        <button class="btn btn-primary" onclick="restart()">Restart</button>
-        <div class="footer">
-            Created By: Ethan Pradeep
-        </div>
-        <div id="myModal" class="modal fade">
-            <div class="modal-diolog">
+        <button id="restart_button" class="btn btn-danger" onclick="restart()">Restart</button>
+        <br>
+        <div id="my_modal" class="modal fade" style="display: none;">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button class="close" data-dismiss="modal">&times;</button>
-                        <h4>Instructions</h4>
+                        <h3>Instructions</h3>
                     </div>
                     <div class="modal-body">
-                        <h4>
-                            Here you will play a ping pong game with the opponant as the computer.It is a normal ping pong game exept to move the paddle you have to move your right hand. 
-                        </h4>
-                        <h4>
-                            To move the paddle up move your right wrist up. 
-                        </h4>
-                        <h4>
-                            To move the paddle down move your right wrist down. 
-                        </h4>
-                        <br><br>
-                        <h4>
-                            How To Get Points:
-                        </h4>
-                        <h4>
-                            If you are able to return the ball you will get one point.
-                        </h4>
-                        <h4>
-                            If you lose the ball you will lose one point 
-                        </h4>
-                        <br><br>
-                        <h4>Good Luck!</h4>
+                        <ol>
+                            <li>First keep your laptop screen straight</li>
+                            <li>Move yourself approximately 3-4 feet away from the laptop</li>
+                            <li>Move your right wrist in an ascending and decending manner, a red dot should appear on your right wrist</li>
+                            <li>Now press the play button, and again move yourself 3-4 feet away from laptop</li>
+                            <li>The red paddel is your paddel, that will move as per the movement of your right wrist</li>
+                        </ol>
                     </div>
                 </div>
             </div>
         </div>
+        <h4 class="footer">
+            Developed By : Whitehat JR Team
+        </h4>
     </center>
     <script src="main.js"></script>
 
-<canvas id="defaultCanvas0" class="p5Canvas" width="700" height="600" style="width: 700px; height: 600px;"></canvas>
-</body>
-</html>
+<video playsinline="" crossorigin="anonymous" width="700" height="600" style="width: 700px; height: 600px; display: none;"></video></body></html>
